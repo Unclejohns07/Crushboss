@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Date Meme with YouTube Video and Image</title>
+  <style>
+    body {
+      background-color: #f9f3ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .meme-container {
+      text-align: center;
+      max-width: 90%;
+    }
+
+    .image-container {
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .meme-button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out, background-color 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .meme-button:hover {
+      background-color: #ff1493;
+      transform: scale(1.1) rotate(-2deg);
+    }
+
+    .caption {
+      font-size: 1.25rem;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .meme-button {
+        padding: 15px 25px;
+        font-size: 1.2rem;
+      }
+
+      .caption {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="meme-container">
+
+    <!-- Image above the video -->
+    <div class="image-container">
+      <img src="https://raw.githubusercontent.com/Unclejohns07/Crushboss/blob/main/ky.PNG" alt="Love Image">
+    </div>
+
+    
+
+    <!-- The Meme Button -->
+    <button class="meme-button" onclick="alert('OMG YOU SAID YES?! 😍🎉')">
+      💘 WILL YOU GO ON A DATE WITH ME BOSS KY? 💘
+    </button>
+
+    <!-- Caption below the button -->
+    <div class="caption">Click it... or JOHN RON will cry 😢</div>
+  </div>
+</body>
+</html>
